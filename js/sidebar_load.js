@@ -6,7 +6,7 @@
         // Get the document inside the iframe
         const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
 
-        // Get all the <a> elements inside the iframe
+        // Get all the <a> elements inside the iframe with class "social-media"
         const links = iframeDoc.querySelectorAll('a');
 
         // Change the style of a elements
@@ -22,9 +22,15 @@
           link.style.textAlign = 'center';
         });
 
-
-        const links_img = iframeDoc.querySelectorAll('img');
+        // Get all the <img> elements inside the iframe with class "social-media"
+        const links_img = iframeDoc.querySelectorAll('.social-media img');
         links_img.forEach(link => {
           link.style.width = '40px';
+        });
+
+
+        const links_sakura_wall = iframeDoc.querySelectorAll('.sakura-wall div');
+        links_sakura_wall.forEach(link => {
+          link.style.width = '100px';
         });
       });

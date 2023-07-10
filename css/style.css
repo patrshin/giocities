@@ -18,6 +18,14 @@ body
 }
 
 
+.hobbies {
+  color: black;
+  font-family: Verdana;
+  padding-left: 20%;
+  height: 100%;
+  text-align: center;
+}
+
 .blurb
 {
   background-color:black;
@@ -49,4 +57,34 @@ body
   font-size: 25px;
   color: #82857b;
   display: block;
+}
+
+/*
+Blog Styles
+*/
+
+.blog-post {
+  background-color: rgba(242, 251, 255, 0.829);
+  font-family: ms gothic;
+  color: black;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin: auto;
+  max-width: 600px;
+  display: block;
+}
+
+.blog-post-title
+{  
+  font-size: 12px;
+  margin:10px;
+  font-weight: bold;
+  text-align: left;  
+}
+
+.delete-button {
+  border: none;
+  padding: 5px 10px;
+  margin-left: 500px;
+  cursor: pointer;
 }
