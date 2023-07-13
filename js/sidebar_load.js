@@ -6,21 +6,40 @@
         // Get the document inside the iframe
         const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
 
-        // Get all the <a> elements inside the iframe with class "social-media"
-        const links = iframeDoc.querySelectorAll('a');
-
+        // Get all the <p> elements inside the iframe with class "social-media"
+        const big_item = iframeDoc.querySelectorAll('p');
         // Change the style of a elements
-        links.forEach(link => {
+        big_item.forEach(link => {
           link.style.color = '#82857b';
           link.style.textDecoration = 'none';
           link.style.fontSize = '25px';
           link.style.fontFamily = 'Arial';
           link.style.fontWeight = 'bold';
-          link.style.padding = '10px';
+          link.style.padding = '0';
+          link.style.margin = '0';
+          link.style.marginLeft = '10px';
+          link.style.display = 'block';
+        });
+
+        const ul = iframeDoc.querySelectorAll('ul');
+        ul.forEach(link => {
+          link.style.margin = '0px';
+          link.style.padding = '0px';
+        });
+        // Get all the <a> elements inside the iframe with class "social-media"
+        const list_item = iframeDoc.querySelectorAll('li');
+        // Change the style of a elements
+        list_item.forEach(link => {
+          link.style.color = '#82857b';
+          link.style.textDecoration = 'none';
+          link.style.fontSize = '15px';
+          link.style.fontFamily = 'Arial';
+          link.style.fontWeight = 'bold';
           link.style.margin = '10px';
           link.style.display = 'block';
           link.style.textAlign = 'center';
         });
+
 
         // Get all the <img> elements inside the iframe with class "social-media"
         const links_img = iframeDoc.querySelectorAll('.social-media img');

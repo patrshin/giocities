@@ -2,13 +2,13 @@
     {
         "id": 1,
         "title": "Hello World",
-        "content": "My first post",
-        "time": "July 8, 2023 at 7:32 PM"
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed rutrum est. Curabitur semper ultricies est. Integer id velit semper, pulvinar nulla at, venenatis lectus. Duis ex diam, eleifend id ligula id, sagittis pellentesque dui. Vivamus imperdiet convallis urna ac vestibulum. Pellentesque tempus bibendum iaculis. Aenean vitae ipsum quis ante sagittis eleifend nec sed lorem.",
+        "time": "7/8/2023"
     },
     {
         "id": 2,
         "title": "Hello World",
         "content": "My second post",
-        "time": "July 8, 2023 at 7:30 PM"
+        "time": "7/8/2023"
     }       
 ]

@@ -42,33 +42,28 @@ body
   position: fixed;
   top: 0;
   left: 0;
-  width: 21%;
+  width: 300px;
   height: 100%;
   background-color: #f0f34c;
   overflow-x: hidden;
   text-align:center;
   display:block;
-
+  padding:20px;
 }
 
-.sidebar a {
-  padding: 0px 0px 0px 0px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #82857b;
-  display: block;
-}
 
 /*
 Blog Styles
 */
 
-.blog-post {
-  background-color: rgba(242, 251, 255, 0.829);
-  font-family: ms gothic;
+.blog-container {
+  background-color: #f2fbffd3;
+  font-family: ms_gothic;
   color: black;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: #b9c3c7d3 10px solid;
+  border-right: #b9c3c7d3 8px solid;
   margin: auto;
   max-width: 600px;
   display: block;
@@ -76,15 +71,24 @@ Blog Styles
 
 .blog-post-title
 {  
-  font-size: 12px;
+  font-size: 20px;
+  color:#cc1105;
   margin:10px;
   font-weight: bold;
+  text-align: left; 
+}
+
+.blog-content
+{  
+  font-size: px;
+  margin:15px;
   text-align: left;  
 }
 
-.delete-button {
-  border: none;
-  padding: 5px 10px;
-  margin-left: 500px;
-  cursor: pointer;
+b {
+  font-size: 12px;
+  color:#ff00d0;
+  margin:10px;
+  font-weight: bold;
+  text-align: left; 
 }

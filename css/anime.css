@@ -1,0 +1,28 @@
+.grid-container
+{
+    display: grid;
+    grid-template-columns: repeat(3, 225px);
+    justify-content: center;
+}
+
+.grid-item {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    font-size: 30px;
+    height: 309px;
+    width: 225px;
+    text-align: center;
+}
+
+.grid-item:hover {
+    opacity: 0.5;
+    transition: ease-in 200ms;
+}
+
+.grid-item:hover + .grid-item p {
+    display: flow;
+}
+
+.grid-item p {
+    display: none;
+}
